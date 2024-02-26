@@ -83,7 +83,7 @@ body {
   position: relative;
   top: 430px;
   left: 500px;
-  animation: block 1s infinite linear; 
+  animation: block 650ms infinite linear; 
   border-radius: 50%;
   clip-path: polygon(
     50% 0%, 55% 15%, 65% 15%,
@@ -161,5 +161,6 @@ body {
   background-color: #803030; 
   color: white; 
 }
+
 
 
