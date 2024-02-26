@@ -16,7 +16,8 @@ body {
 }
 
 #score, #start-btn {
-  margin: 20px 0; /* Add some vertical spacing */
+  margin-bottom: 10px;
+  
 }
 
 #game{
@@ -26,6 +27,7 @@ body {
   border: 1px solid black;
   position: relative;
   overflow: hidden;
+  box-shadow: #000 0px 0px 10px;
 }
 
 
@@ -92,12 +94,42 @@ body {
   background-color: #B2C2BD; 
   color: #000; 
   cursor: pointer; 
-  transition: background-color 0.5s ease; /* Smooth transition for the hover effect */
+  transition: background-color 0.1s ease; 
 }
 
 .game-btn button:hover {
   background-color: #84967C; 
   color: black; 
+}
+
+#gameOver {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+  color: red;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+}
+
+#restart-btn{
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 15px; 
+  font-size: 8px; 
+  text-align: center;
+  margin-top: 10px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+#restart-btn:hover {
+  background-color: #803030; 
+  color: white; 
 }
 
 

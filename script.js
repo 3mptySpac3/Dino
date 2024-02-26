@@ -37,7 +37,12 @@ var checkDead = setInterval(function() {
   if (blockLeft < 420 && blockLeft > 400 && characterTop >= 430) {
     block.style.animation = 'none';
     block.style.display = 'none';
-    alert('You lose. Your score was: ' + score);
+    document.getElementById('gameOver').style.display = 'block'; // Show game over screen
+    document.getElementById('finalScore').innerText = score; // Display final score
+    
+    document.getElementById('restart-btn').addEventListener('click', function() {
+      location.reload(); 
+    });
   }
 }, 10);
 
