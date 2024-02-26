@@ -52,8 +52,11 @@ body {
 
 #game{
   margin: 0 auto;
-  width: 80%;
+  width: 800px;
   height: 500px;
+  position: relative;
+  transform: scale(var(--game-scale));
+  transform-origin: top center;
   border: 1px solid black;
   position: relative;
   overflow: hidden;

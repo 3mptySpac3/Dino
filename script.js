@@ -1,4 +1,18 @@
 
+function adjustGameScale() {
+  const gameWidth = 800; 
+  const gameHeight = 500; 
+  const scaleWidth = window.innerWidth / gameWidth;
+  const scaleHeight = window.innerHeight / gameHeight;
+  const scale = Math.min(scaleWidth, scaleHeight);
+  
+  document.documentElement.style.setProperty('--game-scale', scale);
+}
+
+window.addEventListener('resize', adjustGameScale);
+adjustGameScale(); 
+
+
 document.addEventListener('keydown', function(event) {
   if (event.code === 'Space') {
     jump(); // Call the jump function if the spacebar is pressed
