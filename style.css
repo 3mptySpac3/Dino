@@ -83,7 +83,7 @@ body {
   position: relative;
   top: 430px;
   left: 500px;
-  animation: block 700ms infinite linear; 
+  animation: block 750ms infinite linear; 
   border-radius: 50%;
   clip-path: polygon(
     50% 0%, 55% 15%, 65% 15%,
