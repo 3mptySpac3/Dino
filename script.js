@@ -43,6 +43,9 @@ var checkDead = setInterval(function() {
     block.style.display = 'none';
     document.getElementById('gameOver').style.display = 'block'; // Show game over screen
     document.getElementById('finalScore').innerText = score; // Display final score
+
+    var gameoverSound = document.getElementById('gameover-sound');
+    gameoverSound.play(); // Play the game over sound
     
     document.getElementById('restart-btn').addEventListener('click', function() {
       location.reload(); 
