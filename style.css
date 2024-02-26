@@ -1,0 +1,103 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0; 
+  background-color: #F7F8F7;
+}
+
+#score, #start-btn {
+  margin: 20px 0; /* Add some vertical spacing */
+}
+
+#game{
+  margin: 0 auto;
+  width: 80%;
+  height: 500px;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#character{
+  width: 48px;
+  height: 48px;
+  background-image: url('./images/IdleDino.gif'); 
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  top: 450px;
+  left: 400px;
+}
+
+.animate{
+  animation: jump 500ms;
+}
+
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: relative;
+  top: 430px;
+  left: 500px;
+  animation: block 1s infinite linear; 
+  border-radius: 50%;
+  clip-path: polygon(
+    50% 0%, 55% 15%, 65% 15%,
+    70% 0%, 75% 15%, 80% 0%, 85% 15%,
+    100% 50%, 85% 85%, 80% 100%, 75% 85%
+    , 65% 85%, 60% 100%, 55% 85%,
+    50% 100%, 45% 85%, 40% 100%, 35% 85%,
+    0% 50%, 15% 15%, 20% 0%, 25% 15%,
+    30% 0%, 35% 15%, 40% 0%, 45% 15%
+  );
+}
+@keyframes jump{
+  0%{top: 450px;}
+  30%{top: 400px;}
+  70%{top: 400px;}
+  100%{top: 450px;}
+}
+
+@keyframes block{
+  0%{left: 90%;}
+  100%{left: -20px;}
+}
+
+.dinogame{
+  background-image: url('./images/dino.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.game-btn button {
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  text-align: center;
+  border: 1px solid #B2C2BD; 
+  background-color: #B2C2BD; 
+  color: #000; 
+  cursor: pointer; 
+  transition: background-color 0.5s ease; /* Smooth transition for the hover effect */
+}
+
+.game-btn button:hover {
+  background-color: #84967C; 
+  color: black; 
+}
+
+
