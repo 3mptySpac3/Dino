@@ -6,8 +6,17 @@
   <link rel="stylesheet" href="style.css">
   <title>Dino Dino</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <audio id="jump-sound" src="./images/jump.wav" preload="auto"></audio>
+  <audio id="gameplay-sound" src="./images/gameplay.mp3" preload="auto"></audio>
+  <audio id="gameover-sound" src="./images/dead.wav" preload="auto"></audio>
+  <link rel =icon type = "image/png" sizes="32x32" href = "favicon-32x32.png">
+  <link rel =icon type = "image/png" sizes="16x16" href = "favicon-16x16.png">
+  <link rel =icon type = image/ico href = "favicon.ico">
 </head>
 <body>
+  <div class="mobile-only-image">
+		<img src="./images/screensmall.jpg" alt="Mobile View Only">
+	</div>
   <div id="gameOver" style="display: none;">
     <h2>Game Over</h2>
     <p>Your score was: <span id="finalScore"></span></p>
@@ -23,6 +32,7 @@
     <div id="start-btn" class="game-btn">
       <button>Start</button>
     </div>
+
 
 
 </body>
