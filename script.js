@@ -39,7 +39,7 @@ var checkDead = setInterval(function() {
   var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
   var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
 
-  if (blockLeft < 20 && blockLeft > 0) { // Adjusted condition to increment score
+  if (blockLeft < 20 && blockLeft > 0) { 
     score++; // Increment score
     document.getElementById('scoreSpan').innerText = score; // Update score display
   }
