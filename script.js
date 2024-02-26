@@ -1,7 +1,7 @@
 
 function adjustGameScale() {
   const gameWidth = 800; 
-  const gameHeight = 500; 
+  const gameHeight = 400; 
   const scaleWidth = window.innerWidth / gameWidth;
   const scaleHeight = window.innerHeight / gameHeight;
   const scale = Math.min(scaleWidth, scaleHeight);
@@ -58,7 +58,7 @@ var checkDead = setInterval(function() {
     document.getElementById('scoreSpan').innerText = score; // Update score display
   }
 
-  if (blockLeft < 420 && blockLeft > 400 && characterTop >= 430) {
+  if (blockLeft < 355 && blockLeft > 300 && characterTop >= 330) {
     block.style.animation = 'none';
     block.style.display = 'none';
     document.getElementById('gameOver').style.display = 'block'; // Show game over screen
