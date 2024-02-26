@@ -9,6 +9,12 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+document.addEventListener('keydown', function(event) {
+  if (event.code === 'KeyR') { 
+    location.reload(); // Reloads the current page
+  }
+});
+
 var startBtn = document.getElementById('start-btn');
 
 startBtn.addEventListener('click', function() {

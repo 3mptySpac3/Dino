@@ -23,6 +23,10 @@
   }
 }
 
+body::-webkit-scrollbar {
+	display: none;
+}
+
 
 *{
   padding: 0;
@@ -39,10 +43,11 @@ body {
   min-height: 100vh; 
   margin: 0; 
   background-color: #F7F8F7;
+
 }
 
 #score, #start-btn {
-  margin: 20px 0;  
+  margin: 5px 0;  
 }
 
 #game{
