@@ -36,11 +36,10 @@ body::-webkit-scrollbar {
 body {
   font-family: 'Press Start 2P', cursive;
   flex-direction: column;
-  height: 100%;
   display: flex;
   justify-content: center; 
   align-items: center; 
-  min-height: 100vh; 
+  min-height: 50vh;
   margin: 0; 
   background-color: #F7F8F7;
 
@@ -53,7 +52,7 @@ body {
 #game{
   margin: 0 auto;
   width: 800px;
-  height: 500px;
+  height: 400px;
   position: relative;
   transform: scale(var(--game-scale));
   transform-origin: top center;
@@ -71,8 +70,8 @@ body {
   background-size: cover;
   position: relative;
   background-repeat: no-repeat;
-  top: 450px;
-  left: 400px;
+  top: 355px;
+  left: 350px;
 }
 
 .animate{
@@ -84,7 +83,7 @@ body {
   height: 20px;
   background-color: black;
   position: relative;
-  top: 430px;
+  top: 330px;
   left: 500px;
   animation: block 750ms infinite linear; 
   border-radius: 50%;
@@ -99,10 +98,10 @@ body {
   );
 }
 @keyframes jump{
-  0%{top: 450px;}
-  30%{top: 400px;}
-  70%{top: 400px;}
-  100%{top: 450px;}
+  0%{top: 350px;}
+  30%{top: 300px;}
+  70%{top: 300px;}
+  100%{top: 350px;}
 }
 
 @keyframes block{
