@@ -2,6 +2,10 @@
 document.addEventListener('keydown', function(event) {
   if (event.code === 'Space') {
     jump(); // Call the jump function if the spacebar is pressed
+
+    var jumpSound = document.getElementById('jump-sound');
+    jumpSound.currentTime = 0; // Rewind to the start
+    jumpSound.play(); // Play the jump sound
   }
 });
 
