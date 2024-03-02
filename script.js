@@ -1,3 +1,28 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const backgroundMusic = document.getElementById('background-music');
+  backgroundMusic.volume = 0.5;
+  
+  // Check if music was playing before and attempt to play
+  if (localStorage.getItem('musicPlaying') === 'true') {
+    backgroundMusic.play().catch(e => console.error("Autoplay was prevented due to browser policy. Please interact with the document."));
+  }
+
+  document.addEventListener('keydown', function(event) {
+    if (event.code === 'KeyF') {
+      // Toggle music playing state based on current state
+      if (backgroundMusic.paused) {
+        backgroundMusic.play().then(() => {
+          localStorage.setItem('musicPlaying', 'true');
+          console.log("Music started");
+        }).catch(e => console.error("Failed to play music. User interaction might be required."));
+      } else {
+        backgroundMusic.pause();
+        localStorage.setItem('musicPlaying', 'false');
+        console.log("Music paused");
+      }
+    }
+  });
+});
 
 function adjustGameScale() {
   const gameWidth = 800; 
@@ -12,6 +37,8 @@ function adjustGameScale() {
 window.addEventListener('resize', adjustGameScale);
 adjustGameScale(); 
 
+var backgroundMusic = document.getElementById('background-music');
+backgroundMusic.play(); 
 
 document.addEventListener('keydown', function(event) {
   if (event.code === 'Space') {
