@@ -8,6 +8,7 @@ To enjoy the game, here are some tips:
 
 - **Jump**: Press the `Spacebar` to make the Dino jump over obstacles.
 - **Restart Game**: Press `R` to restart the game at any time.
+- **Music**: Press `F` to play some background music. `Good Luck`
 
 Enjoy the game and try to beat your high score!
 
